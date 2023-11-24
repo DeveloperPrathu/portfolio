@@ -1,6 +1,8 @@
 import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
+import { IconContext } from "react-icons";
+import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -8,23 +10,19 @@ const Navbar = () => {
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
+          className="h-auto w-auto flex flex-row items-center mr-[-4.5rem]"
         >
           <Image
-            src="/NavLogo.png"
+            src="/prathunav.png"
             alt="logo"
-            width={70}
-            height={70}
+            width={100}
+            height={100}
             className="cursor-pointer hover:animate-slowspin"
           />
-
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-            WebChain Dev
-          </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+        <div className="w-[550px] h-full flex flex-row items-center justify-between md:mr-15">
+          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[10px] px-[20px] py-[10px] rounded-full text-gray-200 font-bold text-[16px]">
             <a href="#about-me" className="cursor-pointer">
               About me
             </a>
@@ -37,16 +35,19 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              alt={social.name}
-              key={social.name}
-              width={24}
-              height={24}
-            />
-          ))}
+        <div className="flex flex-row gap-3">
+          
+          <a href="https://m.facebook.com/100073820179575/">
+            <FaFacebook size={25} className="cursor-pointer hover:animate-slowspin" color="blue" />
+          </a>
+
+          <a href="https://www.instagram.com/prathu__gupta/">
+            <FaInstagram size={25} className="cursor-pointer hover:animate-slowspin" color="red" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/developer-prathu-gupta/">
+            <FaLinkedin size={25} className="cursor-pointer hover:animate-slowspin" color="blue" />
+          </a>
         </div>
       </div>
     </div>

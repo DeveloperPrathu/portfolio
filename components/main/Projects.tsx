@@ -12,19 +12,19 @@ const Projects = () => {
       </h1>
       <div className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/flipkart.png"
+          title="Flipkart Clone"
+          description="A Flipkart Clone made using ReactJS, Redux, Firebase, and Material UI. It has features like Google Authentication, Add to Cart, Remove from Cart, and Checkout."
         />
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/athlete.png"
+          title="Athlete Club"
+          description="Gym Website made using ReactJS, Tailwind CSS, and React Router. It has features like Responsive Design, Smooth Scrolling, and Animated Navigation Bar."
         />
         <ProjectCard
-          src="/SpaceWebsite.png"
-          title="Space Themed Website"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          src="/school.png"
+          title="School Management System"
+          description="A School Management System made using ReactJS, Redux, Firebase, and Material UI. It has features like Google Authentication, Add Student, Remove Student, and Update Student."
         />
       </div>
     </div>
