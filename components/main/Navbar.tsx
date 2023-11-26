@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a
           href="#about-me"
-          className="h-auto w-auto flex flex-row items-center mr-[-4.5rem]"
+          className="h-auto w-auto flex flex-row items-center mr-[-4.5rem] hidden md:block" // Added hidden class for medium-sized screens and above
         >
           <Image
             src="/prathunav.png"
@@ -36,7 +36,6 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-3">
-          
           <a href="https://m.facebook.com/100073820179575/">
             <FaFacebook size={25} className="cursor-pointer hover:animate-slowspin" color="blue" />
           </a>
