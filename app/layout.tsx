@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Head from "next/head"; // Import the Head component
 import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
 import Navbar from "@/components/main/Navbar";
@@ -19,6 +20,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      {/* Use the Head component to add meta tags to the <head> section */}
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="hFC5YctWHfazijmCCHtBHoAl8NnwUlKDOWBH1QZgW_8"
+        />
+      </Head>
       <body
         className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
       >
